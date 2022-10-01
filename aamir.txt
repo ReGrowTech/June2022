@@ -1,4 +1,4 @@
-hello i am aamir.I am Saif
+hello i am aamir.I am Saif// azhar
 I am studing at regrow tech.
 
 Greater of 3 nos using ternary operator
