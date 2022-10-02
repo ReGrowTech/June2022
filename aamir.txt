@@ -13,4 +13,5 @@ int res = ((n1>n2)&&(n1>n3)?n1:(n2>n1)&&(n2>n3)?n2:n3);
 System.out.println("The greater of 3 nos is "+res);
 }
 }
+hey i updated my code today
 
