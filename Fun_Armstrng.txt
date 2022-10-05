@@ -1,0 +1,46 @@
+//Azhar
+
+
+public class Main
+{
+    public static int arms(int a)
+    {
+        int b=a;
+        int count=0;
+        while(a!=0){
+            a=a/10;
+            count++;
+        }
+        int ld;
+        int sum=0;
+        while(b!=0)
+        {
+            ld=b%10;
+            b=b/10;
+            int pow=1;
+            for(int i=1;i<=count;i++)
+            {
+                pow=pow*ld;
+            }
+            sum=sum+pow;
+        }
+        return sum;
+    }
+    public static void display(int a,int sum)
+    {
+        if(a==sum)
+        {
+            System.out.println(sum+" is a armstrng Number");
+        }
+        else
+        {
+            System.out.println(sum+" is not a armstrng number");
+        }
+    }
+    public static void main(String args[])
+    {
+        int a=153;
+        int val=Main.arms(a);
+        Main.display(a,val);
+    }
+}
