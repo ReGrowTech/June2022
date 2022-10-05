@@ -1,0 +1,34 @@
+//Azhar
+
+public class Main
+{
+	public static int palin(int a)
+	{
+	    int ld;
+	    int rev=0;
+	    while(a!=0)
+	    {
+	        ld=a%10;
+	        a=a/10;
+	        rev=rev*10+ld;
+	    }
+	    return rev;
+	    
+	}
+	public static void disp(int a,int rev)
+	{
+	    if(rev==a)
+	    {
+	        System.out.println(a+" is Palindrome");
+	    }
+	    else
+	    {
+	        System.out.println(a+" is not  a Palindrome");
+	    }
+	}
+	public static void main(String args[]){
+	    int a=151;
+	    int val=Main.palin(a);
+	    Main.disp(a,val);
+	}
+}
