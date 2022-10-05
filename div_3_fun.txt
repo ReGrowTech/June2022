@@ -1,0 +1,24 @@
+//Azhar
+
+public class Main
+{
+	public static int div(int n)
+	{
+	    int c=3;
+	    int b=1;
+	    for(int i=1;i<=n;i++)
+	    {
+	        if(i%3==0)
+	        {
+	            System.out.println(c+" * "+b+" = "+i);
+	            b++;
+	        }
+	    }
+	    return 0;
+	}
+	public static void main(String args[])
+	{
+	    int a=30;
+	    int val=Main.div(a);
+	}
+}
