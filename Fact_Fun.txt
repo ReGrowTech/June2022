@@ -1,0 +1,43 @@
+//Azhar
+
+import java.util.*;
+public class Main
+{
+    public static void fact(int arr[])
+    {
+        int temp[]=new int[arr.length];
+        int index=0;
+        for(int i=0;i<arr.length;i++)
+        {
+            int fact=1;
+            int a=arr[i];
+            
+            for(int j=1;j<=a;j++)
+            {
+            fact=fact*j;
+            }
+            temp[index]=fact;
+            index++;
+        }
+        Main.disp(temp,index);
+    }
+    public static void disp(int arr[],int cnt)
+    {
+        System.out.println("The Factorials are:- ");
+        for(int i=0;i<cnt;i++)
+        {
+            System.out.println(arr[i]);
+        }
+    }
+    public static void main(String args[])
+    {
+    Scanner sc=new Scanner(System.in);
+     int arr[]=new int[5];
+     System.out.println("Enter values");
+     for(int i=0;i<arr.length;i++)
+     {
+        arr[i]=sc.nextInt();
+     }
+     Main.fact(arr);
+    }
+}
