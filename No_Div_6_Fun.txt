@@ -1,0 +1,46 @@
+//Azhar.
+
+import java.util.*;
+public class Main
+{
+    public static void array(int arr[])
+    {
+        boolean b=false;
+        int temp[]=new int[arr.length];
+        int index=0;
+        for(int i=0;i<arr.length;i++)
+        {
+            if(arr[i]%6==0)
+            {
+                b=true;
+                temp[index]=arr[i];
+                index++;
+            }
+        }
+        Main.disp(temp,index);
+        if(b==false)
+        {
+            System.out.println("No numbers are divisible by 6");
+        }
+    }
+    public static void disp(int arr[],int index)
+    {
+        System.out.println("The numbers divisible by 6 are: ");
+        for(int i=0;i<index;i++)
+        {
+            System.out.println(arr[i]);
+        }
+    }
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int arr[]=new int[5];
+        System.out.println("Enter the values in array");
+        for(int i=0;i<arr.length;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        Main.array(arr);
+        
+     }
+}
