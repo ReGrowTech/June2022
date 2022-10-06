@@ -1,0 +1,14 @@
+LEAP YEAR PROGRAM USING TERNARY OPERATOR
+
+public class leap_year {
+	public static void main(String[]args)
+	{
+		Scanner yy = new Scanner(System.in);
+		System.out.println("Enter any year");
+		int year = yy.nextInt();
+		String res =((year%100==0)&&(year%400==0))||((year%100!=0) &&(year%4==0))?"Leap Year":"Not leap Year";
+		System.out.println(year+" The given year is "+res);
+		
+	}
+
+}
