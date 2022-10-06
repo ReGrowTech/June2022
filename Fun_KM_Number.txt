@@ -1,0 +1,40 @@
+//Azhar
+
+public class Main
+{
+	public static int km_num(int a)
+	{
+	    int ld;
+	    int sum=0;
+	    while(a!=0)
+	    {
+	        ld=a%10;
+	        a=a/10;
+	        int fact=1;
+	        for(int i=1;i<=ld;i++)
+	        {
+	            fact=fact*i;
+	        }
+	        
+	        sum=sum+fact;
+	    }
+	    return sum;
+	}
+	public static void disp(int a,int sum)
+	{
+	    if(a==sum)
+	    {
+	        System.out.println(sum+" is a spcl num");
+	    }
+	    else
+	    {
+	        System.out.println(sum+" is not a spcl number");
+	    }
+	}
+	public static void main(String args[])
+	{
+	    int a=145;
+	    int val=Main.km_num(a);
+	    Main.disp(a,val);
+	}
+}
