@@ -1,0 +1,30 @@
+//Azhar
+
+import java.util.*;
+public class Main
+{
+ public int reverse(int a)
+ {
+     int ld;
+     int rev=0;
+     while(a!=0)
+     {
+         ld=a%10;
+         a=a/10;
+         rev=rev*10+ld;
+     }
+     return rev;
+ }
+ public static void disp(int a)
+ {
+     System.out.println("the reverse of a number is: "+a);
+ }
+ public static void main(String args[])
+ {
+     int a=156;
+     Main ob=new Main();
+     int val=ob.reverse(a);
+     Main.disp(val);
+ }   
+ }
+    
