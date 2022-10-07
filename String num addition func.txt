@@ -1,0 +1,43 @@
+//Azhar
+
+import java.util.*;
+public class Main
+{
+   public static void digits(String s)
+   {
+       s=s.trim();
+       s=s.replaceAll("\\s+"," ");
+       String str="";
+       char arr[]=s.toCharArray();
+       for(int i=0;i<arr.length;i++)
+       {
+           if(Character.isDigit(arr[i]))
+           {
+               str=str+arr[i];
+           }
+       }
+       Main.num(str);
+   }
+   public static void num(String s1)
+   {
+       int a=Integer.parseInt(s1);
+       int ld;
+       int sum=0;
+       while(a!=0)
+       {
+           ld=a%10;
+           a=a/10;
+           sum=sum+ld;
+       }
+       Main.disp(sum);
+   }
+   public static void disp(int val)
+   {
+       System.out.println("The addition is: "+val);
+   }
+   public static void main(String args[])
+   {
+       String s="1nd1a";
+       Main.digits(s);
+   }
+}

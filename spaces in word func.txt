@@ -1,0 +1,20 @@
+//Azhar
+
+import java.util.*;
+public class Main
+{
+   public static void space(String s)
+   {
+       s=s.trim();
+       s=s.replaceAll("\\s+"," ");
+       //String str="";
+       String word[]=s.split(" ");
+       System.out.println("The Number of Spaces in a sentence are:- "+(word.length-1));
+   }
+   public static void main(String args[])
+   {
+       String s="Azhar Hussain";
+       Main.space(s);
+   }
+}
+
