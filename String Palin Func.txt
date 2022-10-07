@@ -1,0 +1,43 @@
+//Azhar
+
+import java.util.*;
+public class Main
+{
+   public static void palin(int a)
+   {
+       String s=String.valueOf(a);
+       s=s.trim();
+       s=s.replaceAll("\\s+"," ");
+       String str="";
+       String word[]=s.split(" ");
+       for(int i=0;i<word.length;i++)
+       {
+           String new_str="";
+           char arr[]=word[i].toCharArray();
+           for(int j=arr.length-1;j>=0;j--)
+           {
+               new_str=new_str+arr[j];
+           }
+           str=str+new_str;
+       }
+       Main.disp(s,str);
+   }
+   public static void disp(String s,String str)
+   {
+       if(str.equals(s))
+       {
+           System.out.println("String is Palindrome");
+       }
+       else
+       {
+           System.out.println("String is not Palindrome");
+       }
+   }
+   public static void main(String args[])
+   {
+       Scanner sc=new Scanner(System.in);
+       System.out.println("Enter the Integer value");
+       int a=sc.nextInt();
+       Main.palin(a);
+   }
+}

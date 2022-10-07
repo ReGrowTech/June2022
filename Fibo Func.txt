@@ -1,0 +1,24 @@
+//Azhar
+
+
+public class Main
+{
+    public static int fibo(int first_val)
+    {
+        int n=10;
+        int scnd_val=1;
+        for(int i=1;i<=n;i++)
+        {
+            System.out.print(first_val+" ");
+            int new_val=first_val+scnd_val;
+            first_val=scnd_val;
+            scnd_val=new_val;
+        }
+        return 0;
+    }
+    public static void main(String args[])
+    {
+        int va=0;
+        int fib=Main.fibo(va);
+    }
+}
