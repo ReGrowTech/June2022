@@ -1,0 +1,34 @@
+//Azhar
+
+import java.util.*;
+public class Main
+{
+   public static void change(String s)
+   {
+       s=s.trim();
+       s=s.replaceAll("\\s+"," ");
+       String str="";
+       char arr[]=s.toCharArray();
+       for(int i=0;i<arr.length;i++)
+       {
+           if(Character.isLowerCase(arr[i]))
+           {
+               str=str+Character.toUpperCase(arr[i]);
+           }
+           else
+           {
+               str=str+Character.toLowerCase(arr[i]);
+           }
+       }
+       Main.disp(str);
+   }
+    public static void disp(String str)
+    {
+        System.out.println(str);
+    }
+    public static void main(String args[])
+    {
+        String s="Azhar Hussain Aman SHARIque";
+        Main.change(s);
+    }
+}

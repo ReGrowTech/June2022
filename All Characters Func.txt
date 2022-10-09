@@ -1,0 +1,27 @@
+//Azhar
+
+public class Main
+{
+	public static String sentence(String s)
+	{
+	    s=s.trim();
+	    s=s.replaceAll("\\s+"," ");
+	    char arr[]=s.toCharArray();
+	    String str="";
+	    for(int i=0;i<arr.length;i++)
+	    {
+	       str=str+arr[i]+" "; 
+	    }
+	    return str;
+	}
+	public static void disp(String str)
+	{
+	    System.out.println(str);
+	}
+	public static void main(String args[])
+	{
+	    String s="Azhar Hussain";
+	    String s1=Main.sentence(s);
+	    Main.disp(s1);
+	}
+}

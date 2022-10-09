@@ -1,0 +1,30 @@
+//Azhar
+
+import java.util.*;
+public class Main
+{
+   public static void initial(String s)
+   {
+       s=s.trim();
+       s=s.replaceAll("\\s+"," ");
+       String str="";
+       String word[]=s.split(" ");
+       for(int i=0;i<word.length-1;i++)
+       {
+           char ch=word[i].charAt(0);
+           str=str+ch+". ";
+       }
+            str=str+word[word.length-1];
+            Main.disp(str);
+   }
+   public static void disp(String str)
+   {
+       System.out.println(str);
+   }
+   
+   public static void main(String args[])
+   {
+       String s="Azhar Hussain Aman Hussain";
+       Main.initial(s);
+   }
+}
