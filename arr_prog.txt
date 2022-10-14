@@ -1,0 +1,36 @@
+//input ={3,3,0,4,3,1,5,2,5,4,2}
+//output =  3
+		2
+		5
+
+public class Array_Sort
+{
+public static void main(String[]args)
+	{
+		int arr[]={3,3,0,3,1,5,2,3,4,2}
+		for(int i=0;i<arr.length;i++)
+			{
+				if(arr[i]!=Integer.Max_Value)
+				 {
+				   int cnt =1;
+				    for(int j=i+1;j<arr.length;j++)
+					{
+					  if(arr[i]==arr[j])
+					   {
+						cnt++;
+					    ip[j]= Integer.Max
+					   }
+						if(cnt>1)
+						  {
+						   System.out.println(arr[i]);
+						   }
+					  }
+				   }
+				}
+	  }
+}
+	
+						
+
+						
+
