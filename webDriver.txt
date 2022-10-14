@@ -1,0 +1,12 @@
+
+
+	WebDriver driver;
+	System.setProperty("webdriver.chrome.driver","C:\Users\Aamir\Downloads\chromedriver_win32");
+	driver = new ChromeDriver;
+	driver.manage().window().maximize();
+	driver.get("https://demoqa.com/elements");
+	String display_url = driver.getCurrentUrl();
+	System.out.println("it is "+ display_url);
+	
+	
+	
