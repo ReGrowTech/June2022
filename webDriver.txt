@@ -1,12 +1,31 @@
+package testing;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 
-	WebDriver driver;
-	System.setProperty("webdriver.chrome.driver","C:\Users\Aamir\Downloads\chromedriver_win32");
-	driver = new ChromeDriver;
-	driver.manage().window().maximize();
-	driver.get("https://demoqa.com/elements");
-	String display_url = driver.getCurrentUrl();
-	System.out.println("it is "+ display_url);
-	
-	
-	
+public class Practice {
+
+	public static void main(String[] args) {
+		WebDriver driver;
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\Aamir\\Downloads\\chromedriver_win32\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.navigate().to("https://demoqa.com/elements");
+		driver.findElement(By.xpath("//span[contains(text(),'Text Box')]")).click();
+		
+		driver.findElement(By.id("userName")).sendKeys("Aamir");
+		driver.findElement(By.id("userEmail")).sendKeys("eqbalaamir44@gmail.com");
+		driver.findElement(By.id("currentAddress")).sendKeys("H.no 121, camac st,jsr");
+		driver.findElement(By.id("permanentAddress")).sendKeys("h-56,madien heights,banglore");
+		WebElement sc =driver.findElement(By.id("submit"));
+		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", sc);
+		sc.click();
+		Thread.sleep(3000);
+		driver.close();
+		
+		System.out.println("completed");
+	}
+
+}
