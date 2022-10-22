@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+public class Capsule_selenium {
+=======
 public class Practice {
+>>>>>>> 6649e18965679efc664b72c71ea41c8e71ada3a6
 
 	public static void main(String[] args) {
 		WebDriver driver;
