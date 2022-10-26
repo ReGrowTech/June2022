@@ -14,7 +14,7 @@ public class Practice {
 		driver.findElement(By.id("userEmail")).sendKeys("eqbalaamir44@gmail.com");
 		driver.findElement(By.id("currentAddress")).sendKeys("H.no 121, camac st,jsr");
 		driver.findElement(By.id("permanentAddress")).sendKeys("h-56,madien heights,banglore");
-		
+		saif ahmad
 		
 	}
 
