@@ -12,5 +12,3 @@ public class leap_year {
 	}
 
 }
-hey i have aaded this code
-saif
