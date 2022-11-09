@@ -1,0 +1,445 @@
+///////////////////////////////////////////////////////////////
+LEAP YEAR
+public class x {
+p.s.v.m(String[]args){
+{
+int year = 2000;
+
+if(year%100==0)
+{
+if(year%400==0)
+{
+System.out.println("The given year is Leap year"+year);
+}
+else
+{
+S.O.P.ln("The given year is not a leap year"+year)
+}
+}
+else
+{
+if(year%4==0)
+{
+S.O.PLN("the given year is leap year");
+}
+else
+{
+S.O.P("the given year is not a leap year);
+}
+}
+}
+}
+
+
+////////////////////////////////////////////////////////
+Greater of 3 nos using ternary operator
+
+public static void main(String[]args){
+int n1 = 23;
+int n2= 33;
+int n3 = 12;
+
+int res = ((n1>n2)&&(n1>n3)?n1:(n2>n1)&&(n2>n3)?n2:n3);
+System.out.println("The greater of 3 nos is "+res);
+}
+}
+
+///////////////////////////////////////////////////////////////
+Number divisible by 5
+
+public class x {
+public static void main(String[]args){
+
+int num=1;
+while(num!=0)
+{
+if(num%5==0)
+{
+System.out.println(num);
+}
+num++
+}
+}
+}
+
+//////////////////////////////////////////////////////////
+PALINDROME NUMBER(rev==num)
+
+public class x {
+p.s.v.m(String[]args){
+
+int num = 145;
+int ld;
+int rev=0;
+int numc=num;
+
+while(num!=0)
+{
+ld=num%10;
+num=num/10;
+}
+if (rev==numc)
+{
+S.O.Pln(numc+"it is a plandrome number");
+}
+else
+{
+S.O.Pln(numc+"Not a palindrome number");
+}
+}
+}
+
+//////////////////////////////////////////////////
+FACTORIAL of any number
+
+public class x{
+p.s.v.m(String[]args){
+
+int i =1 ;
+int fact = 1;
+long num = 3;
+
+while(i!=(num+1))
+{
+fact = fact * i;
+i++;
+}
+System.out.println(fact);
+}
+}
+
+/////////////////////////////////////////////////
+wap to print 30-5 using while loop
+
+public class x {
+p.s.v.m(String[]args){
+
+int i=30;
+while(i>=5)
+{
+S.O.Pln(i);
+i--;
+}
+}
+}
+
+////////////////////////////////////////////
+Special no (145!=145) KRISHNAMURTY no
+
+public class x {
+p.s.v.m(String[]args){
+
+int num = 145;
+int numc = num;
+int sum = 0;
+int ld;
+
+while(num!=0)
+{
+ld= num%10;
+num = num/10;
+int fact = 1;
+int i =1;
+while(i!=(ld+1))
+{
+fact = fact*i;
+i++;
+}
+sum= sum+fact;
+}
+if(sum==numc)
+{
+System.out.println(numc+"it is a km no");
+}
+else
+{
+sopln(numc+"not a special or km no");
+}
+}
+}
+
+///////////////////////////////////////////////
+swap using 3rd variable
+
+int a=5;
+int b= 7;
+int c;
+
+c=a;
+a=b;
+b=c;
+System.out.println(a);
+sopln(b);
+}
+}
+
+/////////////////////////////////////
+SWAP WITHOUT 3RD VARIABLE
+
+int a= 11;
+int b =6;
+
+a=a+b;
+b=a-b;
+a=a-b;
+s.o.pln("val of a is"+a+"val of b is"+b);
+
+////////////////////////////////////////////////
+count the no of digit // 3456:- 4 digit number
+
+public class x {
+p.s.v.m(String args[]){
+
+long num = 56789;
+int count = 0;
+
+while(num!=0)
+{
+num=num/10;
+count++
+}
+s.o.pln("no of digits are "+count);
+}
+}
+
+////////////////////////////////////////////////
+Reverese of any number
+//12345 -54321
+
+int num = 12345;
+int rev=0;
+int ld;
+while(num!=0)
+{
+ld=num%10;
+num=num/10;
+rev = (rev*10)+ld;
+}
+s.o.pln(rev);
+}
+}
+
+/////////////////////////////////////////////////////
+AMSTRONG NUMBER (is a no if we have the power over its digit = length of digit) 
+// 153 = 1cube+5cube+3cube
+
+public class x {
+p.s.v.m(String[]args){
+
+int n = 345;
+int n1= n;
+int n2=n;
+int ld;
+int cnt=0;
+int sum=0;
+
+while(n!=0)
+{
+n=n/10;
+cnt++;
+}
+while(n1!=0)
+{
+ld = n1%10;
+n1=n1/10;
+int pow=1;
+int i=1;
+while(i<=cnt)
+{
+power=power*ld;
+i++;
+}
+sum=sum+power;
+}
+if(n2==sum)
+{
+S.o.pln("amstrong no");
+}
+else
+{
+sopln("not a amstrong no");
+}
+}
+
+//////////////////////////////////////////////
+//Check PRIME NUMBER
+
+public class x {
+p.s.v.m(String[]args){
+
+int num = 32;
+int cnt=0;
+
+for(int i=1;i<=num;i++)
+{
+if(num%i==0)
+{
+cnt++;
+}
+}
+if (count==2)
+{
+S.o.pln("prime number");
+}
+else
+{
+S.O.PLN("not a prime number");
+}
+}
+}
+
+//////////////////////////////////////////
+//prime no between 30 to 40
+p.c x {
+p.s.v.m(string[]args){
+
+for(int num =30;num<=40;num++)
+{
+int cnt=0;
+for(int i=1; i<=num;i++)
+{
+if(num%i==0)
+{
+cnt++;
+}
+}
+if(cnt==2)
+{
+s.o.pln("num+"is a prime no);
+}
+}
+}
+
+////////////////////////////////////////////////////////
+count EVEN number btween 80 to 30
+p.c x{
+p.s.v.m(String[]args){
+
+int cnt=0;
+for(int i=80;i>=30;i--)
+{
+if(i%2==0)
+{
+cnt++;
+}
+}
+s.o.pln(count);
+
+///////////////////////////////////////////
+pattern program
+
+1
+22
+333
+
+p.s.v.m(string[]args){
+
+for(int r=1;r<=3;r=+)
+{
+for(c=1;c<=r;c++)
+{
+Sop (r);
+}
+sopln( );
+}
+}
+}
+///////////////////////////////////////////////
+
+
+A
+AB
+ABC
+
+p.c x{
+p.s.v.m(String[]args){
+
+for(int r=65;r<=67;r++)
+{
+for(int c=65;c<=r;c++)
+{
+sop((char)r);
+}
+sopln( );
+}
+}
+}
+
+////////////////////////////////////////////
+
+54321
+5432
+543
+54
+5
+
+for(int r=1;r<=n;r++)
+{
+for(int c=1;c<=(n-r+1);c++)
+{
+sop(6-c)
+}
+sopln()
+}
+}
+}
+//////////////////////////////////////////////
+
+6
+54
+321
+
+int n=3;
+int cnt=0;
+for(int r=1;r<=n;r++)
+{
+for(int c=1;c<=r;c++)
+{
+sop(cnt);
+cnt--;
+}
+sopln();
+}
+}
+}
+
+////////////////////////////////////////////////////////////////
+COUNT DIGIT AND CALCULATE ITS FACTORIAL
+
+int num = 235;
+int count = 0;
+		
+	while(num!=0)
+	{
+	num=num/10;
+	count++;
+	}
+	System.out.println(count+" DIGIT NUMBER");
+	int fact=1;
+	int i=1;
+	for(i=1;i<=count;i++)
+	{
+	fact=fact*i;
+		
+	}
+	System.out.println(fact);
+   }
+}
+
+///////////////////////////////////////////////////////////////////////////
+LEAP YEAR PROGRAM USING TERNARY OPERATOR
+
+public class leap_year {
+	public static void main(String[]args)
+	{
+		Scanner yy = new Scanner(System.in);
+		System.out.println("Enter any year");
+		int year = yy.nextInt();
+		String res =((year%100==0)&&(year%400==0))||((year%100!=0) &&(year%4==0))?"Leap Year":"Not leap Year";
+		System.out.println(year+" The given year is "+res);
+		
+	}
+
+}
+
+

@@ -1,0 +1,17 @@
+
+
+for(int i=20;i>=50;i++)
+{
+int cnt =1;
+for(int j=1;j>=i;j++)
+{
+if(i%2==0)
+{
+cnt++;
+}
+}
+if(cnt==2)
+{
+System.out.println(i+" is a prime number");
+}
+

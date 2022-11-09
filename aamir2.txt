@@ -1,0 +1,21 @@
+<<<<<<< HEAD
+public class Capsule_selenium {
+=======
+public class Practice {
+>>>>>>> 6649e18965679efc664b72c71ea41c8e71ada3a6
+
+	public static void main(String[] args) {
+		WebDriver driver;
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\Aamir\\Downloads\\chromedriver_win32\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.navigate().to("https://demoqa.com/text-box");
+		driver.findElement(By.id("userName")).sendKeys("Aamir");
+		driver.findElement(By.id("userEmail")).sendKeys("eqbalaamir44@gmail.com");
+		driver.findElement(By.id("currentAddress")).sendKeys("H.no 121, camac st,jsr");
+		driver.findElement(By.id("permanentAddress")).sendKeys("h-56,madien heights,banglore");
+		saif ahmad
+		
+	}
+
+}
