@@ -1,0 +1,20 @@
+p.s.v.m(String[]args){
+
+String str = "Aamir Aam Eqbal";
+str=str.trim();
+str=str.replaceAll("//s+","!=ch");
+String newstr="";
+
+char ch[] =str.toCharArray();
+for(int i=o;i<str.length;i++)
+{
+for(int j=i+1;j<str.length;j++)
+{
+if(ch[i]!=ch[j])
+{
+newstr = newstr+ch[i];
+}
+}
+System.out.println(newstr);
+}
+
