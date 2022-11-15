@@ -1,0 +1,28 @@
+package demo;
+
+public class Demo2 {
+	
+	public static int method ()
+	{
+		System.out.println("i am static method");
+		return 0;
+	}
+	public String method2 ()
+	{
+		System.out.println("i am non static method2");
+		return null;	
+	}
+	
+	public static void main(String[] args) 
+	{
+		int num = method();
+		Demo2 obj = new Demo2();
+		String str = obj.method2();
+	}
+	static
+	{
+		System.out.println("i am static block");
+	}
+		
+		
+	}
