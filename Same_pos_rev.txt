@@ -1,0 +1,4 @@
+p.s.v.m(String[]args){
+String str = " heLLo thERE AaMIr ";
+str=str.trim();
+str=str.replaceAll(/"S+/","");
