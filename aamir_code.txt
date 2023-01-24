@@ -12,5 +12,8 @@ public class leap_year {
 	}
 
 }
+<<<<<<< HEAD
 hey i have aaded this code
 saif ok....
+=======
+>>>>>>> 5357fee544b9348e73e85f7c74b3c52af7ee39a0

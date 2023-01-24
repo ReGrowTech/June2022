@@ -1,0 +1,24 @@
+p.s.v.m(String[]args){
+	String str ="he110 1am 24years 01d ";
+		str=str.trim();
+		str=str.replaceAll("/+S/","");
+		String newStr ="";
+		char ch [] = str.toCharArray();
+		for(int i=0; i<ch.length;i++)
+		{
+		 if(Character.isDigit(ch[i]))
+		 newStr = newStr+ch[i];
+		}
+		int a = Integer.parseInt(newStr);
+		int ld,sum=0;
+		while(a!=0)
+		{
+		ld = a%10;
+		a= a/10;
+		sum = sum + ld;
+		}
+		System.out.println(sum+" is the sum of the digit present in string");
+}
+}
+
+

@@ -1,0 +1,13 @@
+public static void main(String args[])
+	{
+		WebDriver driver;
+		System.setProperty("webdriver.chrome.driver", "E:\\driver\\chromedriver.exe");
+		driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://demoqa.com/frames");
+		
+		driver.findElement(By.xpath("//iframe[@id='frame1']"));
+		driver.switchTo().frame("frame1");
+		driver.findElement(By.xpath("//h1[text()='This is a sample page']"));
+		driver.close();
+	}

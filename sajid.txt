@@ -1,3 +1,5 @@
+(Question)-WAP to check whether 1900 is a leap year or not. 
+
 public class Leap_year {
 
 	public static void main(String[] args) {
@@ -27,3 +29,25 @@ public class Leap_year {
 		}
 
 	}
+
+(Question)- WAP to print all the leap years between 2023 to 2322.
+
+public class leap_year
+{
+ public static void main(String args[])
+ {
+  int year = 2023;
+  int n = 73;
+  int count = 0;
+  
+  while (count!=n)
+  {
+   year = year + 1;
+   if ((year % 400 == 0)||(year % 4 == 0 && year % 100 !== 0))
+   {
+    count++;
+    System.out.println(year);
+   }
+  }
+ }
+}

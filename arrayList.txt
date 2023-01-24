@@ -1,0 +1,18 @@
+public static void main (String[]args){
+
+ArrayList<Integer> al = new ArrayList();
+ArrayList <Integer> a = new ArrayList();
+
+al.add(20);
+al.add(30);
+al.add(40);
+al.remove(30);
+a.add(30);
+a.add(70);
+a.add(60);
+
+al.addAll(a);
+
+System.out.println(a);
+}
+}
